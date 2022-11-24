@@ -1,0 +1,64 @@
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+
+.danmaku-item {
+	line-height: 1.8em;
+	position: relative;
+	padding-left: 2.5em;
+	margin-bottom: 0.5em; 
+	max-width: 25em;
+	background-color: rgba(255,255,255,.4);
+	color: #000;
+	text-shadow:none;
+}
+
+.danmaku-item::before {
+	content: ' ';
+	width: 5px;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	border-left: 8px solid black;
+	border-right: 2px solid black;
+}
+
+.danmaku-author-name {
+	color: #333;
+	font-family: "TsangerYuYangT", sans-serif;
+	font-weight:400;
+	text-shadow: 0px 0px 7px #fff;
+	font-size:20px;
+}
+
+.danmaku-author-name::before {
+	content: '■';
+	position: absolute;
+	left: 1.3em;
+	top: 0.3em;
+	color: #000;
+	font-size:18px;
+}
+
+.danmaku-message {
+	color: inherit;
+	font-family: "TsangerMingKai", sans-serif;
+	font-weight:400;
+	font-size:20px;
+}
+
+.danmaku-gift-name,
+.danmaku-gift-num {
+	font-family: "TsangerYuYangT", sans-serif;
+	font-weight:400;
+	color: rgba(145,105,181);
+	text-shadow: 0px 0px 7px #fff;
+	font-size:20px;
+}
+
+.danmaku-author-name.owner {
+	color: #1b7eae;
+}
+
+.danmaku-author-name.anchor {
+	color: #9169b5;
+}
