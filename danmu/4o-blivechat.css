@@ -249,16 +249,16 @@ yt-live-chat-paid-message-renderer[show-only-header] #content.yt-live-chat-paid-
 }
 #content yt-live-chat-author-badge-renderer.style-scope.yt-live-chat-author-chip {
   margin-bottom: -0.5em;
-  clip-path: polygon(0 0, 94% 0, 94% 75%, 0 75%);
+  clip-path: polygon(0 0, 94% 0, 94% 78%, 0 78%);
   z-index:-1;
 }
 #content img.yt-live-chat-author-badge-renderer {
-  width: 80px;
-  height: 80px;
-  opacity: .6;
+  width: 90px;
+  height: 90px;
+  opacity: .5;
   transform: rotate(-15deg);
   clip-path: margin-box;
-  filter: grayscale(40%);
+  filter: grayscale(30%);
 }
 
 #content .el-tooltip.style-scope.yt-live-chat-author-badge-renderer svg {
