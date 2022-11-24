@@ -1,0 +1,248 @@
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+
+/* Transparent background */
+yt-live-chat-renderer,
+yt-live-chat-ticker-renderer,
+yt-live-chat-author-chip #author-name{
+  background: transparent !important;
+}
+
+
+/* Hide scrollbar */
+yt-live-chat-item-list-renderer #items,
+yt-live-chat-item-list-renderer #item-scroller {
+  overflow: hidden !important;
+}
+
+yt-live-chat-text-message-renderer #content,
+yt-live-chat-membership-item-renderer #content {
+  overflow: visible !important;
+}
+
+/* Hide header and input */
+yt-live-chat-header-renderer,
+yt-live-chat-message-input-renderer,
+yt-live-chat-text-message-renderer[is-deleted],
+yt-live-chat-membership-item-renderer[is-deleted],
+yt-live-chat-mode-change-message-renderer, 
+yt-live-chat-viewer-engagement-message-renderer, 
+yt-live-chat-restricted-participation-renderer {
+  display: none !important;
+}
+
+
+yt-live-chat-text-message-renderer a,
+yt-live-chat-membership-item-renderer a {
+  text-decoration: none !important;
+}
+
+/* Avatars */
+yt-live-chat-text-message-renderer #author-photo,
+yt-live-chat-text-message-renderer #author-photo img,
+yt-live-chat-paid-message-renderer #author-photo,
+yt-live-chat-paid-message-renderer #author-photo img,
+yt-live-chat-membership-item-renderer #author-photo,
+yt-live-chat-membership-item-renderer #author-photo img {
+  display: none !important;
+}
+
+
+/*costum*/
+
+yt-live-chat-ticker-renderer {
+  display: none;
+}
+* {
+  font-size:20px;
+}
+
+yt-live-chat-text-message-renderer {
+  padding: 0;
+}
+
+#content.yt-live-chat-text-message-renderer {
+  line-height: 1.2em;
+  position: relative;
+  padding: 1.3em 10%;
+  width: 100%;
+  min-height: 3em;
+  margin-top: 0.5em;
+  background: url("https://css.4o.cx/ffxiv/cmt.png");
+  background-size: 100% 100%;
+  color: #000;
+  text-shadow:none;
+}
+
+#content.yt-live-chat-text-message-renderer::after {
+  position: absolute;
+  content: " ";
+  width: 0.7em;
+  height: 1.3em;
+  background: url("https://css.4o.cx/ffxiv/click.png");
+  background-size: cover;
+  bottom: 1em;
+  right: 10%;
+}
+
+#content #author-name.yt-live-chat-author-chip {
+  color: #FFF;
+  font-family: "TsangerYuYangT", "Noto sans CJK SC", "微软雅黑", sans-serif;
+  font-weight:400;
+  text-shadow: 0px 0px 7px #000;
+  font-size: 18px;
+  padding: 0 1.7em;
+}
+
+#content yt-live-chat-author-chip.yt-live-chat-text-message-renderer {
+  position: absolute;
+  background: url("https://css.4o.cx/ffxiv/user.png");
+  background-size: 100% 100%;
+  top: -10px;
+  left: 0;
+  min-width: 50%;
+  padding: 5px 0;
+}
+
+#message.yt-live-chat-text-message-renderer {
+  color: inherit;
+  font-family: Helvetica, "Noto sans CJK SC", "微软雅黑", sans-serif;
+  font-weight:400;
+  font-size:20px;
+}
+#author-name.yt-live-chat-author-chip {
+  text-shadow: 0px 0px 7px #000;
+}
+#author-name.yt-live-chat-author-chip[type=owner], yt-live-chat-author-chip[is-highlighted] #author-name.yt-live-chat-author-chip[type=owner] {
+  background: transparent;
+  color: #9169b5;
+}
+
+#author-name.yt-live-chat-author-chip[type=member] {
+  color: #3a8ee6;
+}
+
+yt-live-chat-text-message-renderer #author-name[type="moderator"], yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="moderator"] {
+  color: #d3700b !important;
+}
+
+/*card*/
+
+yt-live-chat-membership-item-renderer,
+yt-live-chat-paid-message-renderer {
+  padding: 0;
+  margin-top: 0.5em;
+}
+
+yt-live-chat-paid-message-renderer+yt-live-chat-paid-message-renderer,
+yt-live-chat-paid-message-renderer+yt-live-chat-membership-item-renderer,
+yt-live-chat-membership-item-renderer+yt-live-chat-membership-item-renderer,
+yt-live-chat-membership-item-renderer+yt-live-chat-paid-message-renderer {
+  margin-top: 0;
+}
+
+
+#card.yt-live-chat-membership-item-renderer {
+  border-radius: 0;
+}
+
+yt-live-chat-membership-item-renderer[show-only-header] #header.yt-live-chat-membership-item-renderer {
+  background: url("https://css.4o.cx/ffxiv/member.png");
+  background-size: 100% 100%;
+  padding: 1em 10% 1.5em 10%;
+  position: relative;
+}
+
+#header-subtext.yt-live-chat-membership-item-renderer {
+  color: #fff;
+}
+
+#author-name.yt-live-chat-paid-message-renderer::before {
+  content: 'From ';
+}
+
+/* SC */
+
+#card.yt-live-chat-paid-message-renderer {
+  border-radius: 0;
+  padding-bottom: 0;
+  background: url("https://css.4o.cx/ffxiv/gift.png");
+  background-size: 100% 100%;
+  min-height: 4em;
+  box-shadow: none;
+}
+#header.yt-live-chat-paid-message-renderer {
+  border-radius:0;
+  background-color: transparent;
+  color: #fff;
+  padding: 1em 10% 0 10%;
+  text-shadow: 0px 0px 7px #000;
+}
+
+#author-name.yt-live-chat-paid-message-renderer,
+#purchase-amount.style-scope.yt-live-chat-paid-message-renderer {
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 0px 0px 7px #000;
+  font-family: "Noto sans CJK SC", "微软雅黑", sans-serif;
+  font-weight: 300;
+}
+#header-content-primary-column.yt-live-chat-paid-message-renderer {
+  flex-direction: row;
+  align-items: bottom;
+}
+#content.yt-live-chat-paid-message-renderer {
+  background: transparent;
+  border-radius: 0;
+}
+
+#content.yt-live-chat-paid-message-renderer {
+  color: #fff;
+  font-family: Helvetica, "Noto sans CJK SC", "微软雅黑", sans-serif;
+  padding: 0 10% 1.5em 10%;
+}
+#message.style-scope.yt-live-chat-paid-message-renderer {
+  text-shadow: 0px 0px 7px #000;
+}
+yt-live-chat-paid-message-renderer[show-only-header] #header.yt-live-chat-paid-message-renderer {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+yt-live-chat-paid-message-renderer[show-only-header] #content.yt-live-chat-paid-message-renderer {
+  display: none;
+}
+
+/*ship*/
+
+
+#content yt-live-chat-author-badge-renderer.style-scope.yt-live-chat-author-chip {
+  display: none !important;
+}
+#card .yt-live-chat-author-badge-renderer,
+#content yt-live-chat-author-badge-renderer.style-scope.yt-live-chat-author-chip:last-child {
+  display: block !important;
+}
+#card yt-live-chat-author-badge-renderer.yt-live-chat-author-chip {
+  position:absolute;
+  top: 14px;
+  right: 1.2em;
+}
+#card img.yt-live-chat-author-badge-renderer {
+  width: 58px;
+  height: 58px;
+}
+
+#content img.yt-live-chat-author-badge-renderer {
+  width: 20px;
+  height: 20px;
+  position:absolute;
+  bottom: 7px;
+}
+
+#content yt-live-chat-author-badge-renderer.yt-live-chat-author-chip {
+  margin-left: -1.2em;
+}
+
+#content .el-tooltip.style-scope.yt-live-chat-author-badge-renderer svg {
+  display: none !important;
+}
