@@ -2,6 +2,8 @@
 
 基于 [demo1](https://github.com/hekatech/achrom-css/tree/main/demo1) 修改，添加更多可配置选项的弹幕样式
 
+![](preview.png)
+
 ## 使用方法
 
 在 OBS 浏览器的自定义 CSS 样式框中输入：
