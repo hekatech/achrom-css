@@ -41,3 +41,7 @@
 `cstm-fontsize` = 弹幕正文字体大小，其它字符和图标尺寸会等比例缩放
 
 `direction` = 弹幕流对齐的位置，`unset` 是靠下方对齐，`relative` 为靠上方对齐
+
+### SP
+
+为 bullshit 弹幕新风控政策追加了一个新 SP 样式「黒塗り弹幕宛て書簡」
